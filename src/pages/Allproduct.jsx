@@ -1,7 +1,7 @@
 import React, { useContext, useState, useMemo } from "react";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../reduxToolKit-store/productSlice";
-import { globalContext } from "../myCongtext/MyContext";
+import { addToCart } from "../rtk_store/productSlice";
+import { globalContext } from "../myContext/MyContext";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Allproduct.css"

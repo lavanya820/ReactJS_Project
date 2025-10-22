@@ -2,9 +2,9 @@
 import React, { useContext, useState } from "react";
 // import "./TopProduct.css";
 import "./Topproduct.css"
-import { globalContext } from "../myCongtext/MyContext";
+import { globalContext } from "../myContext/MyContext";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../reduxToolKit-store/productSlice";
+import { addToCart } from "../rtk_store/productSlice";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 

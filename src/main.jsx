@@ -5,9 +5,9 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
-import MyContext from './myCongtext/MyContext.jsx'
+import MyContext from './myContext/MyContext.jsx'
 import { Provider } from 'react-redux';
-import { store } from './reduxToolKit-store/store.js';
+import { store } from './rtk_store/store.js';
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>

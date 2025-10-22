@@ -1,13 +1,11 @@
-
-
 import React, { useState, useRef, useContext } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button, Form } from "react-bootstrap";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { globalContext } from "../myCongtext/MyContext"; // 👈 import context
+import { globalContext } from "../myContext/MyContext"; // 👈 import context
 
 const Header = () => {
   // 🛒 Redux cart

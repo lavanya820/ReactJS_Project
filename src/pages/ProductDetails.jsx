@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { globalContext } from "../myCongtext/MyContext";
+import { globalContext } from "../myContext/MyContext";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../reduxToolKit-store/productSlice";
+import { addToCart } from "../rtk_store/productSlice";
 import "./ProductDetails.css";
 import { toast } from "react-toastify";
 import { FaStar } from "react-icons/fa";
-import anji from "../assets/Anji.jpg"
-import aslam from '../assets/aslam.jpg'
+import mine from "../assets/mine.jpg"
+import hero1 from '../assets/hero1.jpg'
 import { Link } from "react-router-dom";
 
 
@@ -21,19 +21,19 @@ const ProductDetails = () => {
     const reviews = [
         {
             id: 1,
-            name: "Anji",
+            name: "Harish",
             date: "4 Aug 2025",
             rating: 5,
             text: "Sound is awesome and as I expected, love it.",
-            avatar: anji
+            avatar: mine
         },
         {
             id: 2,
-            name: "Aslam Bhai",
+            name: "Demon",
             date: "23 May 2024",
             rating: 5,
             text: "Very good and awesome product",
-            avatar: aslam
+            avatar: hero1
 
         },
         {

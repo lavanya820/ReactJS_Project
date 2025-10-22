@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { increaseQty, decreaseQty, removeFromCart } from "../reduxToolKit-store/productSlice";
+import { increaseQty, decreaseQty, removeFromCart } from "../rtk_store/productSlice";
 import { BsCartX } from "react-icons/bs";
 import "./Cart.css";
 const Cart = () => {
