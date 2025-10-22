@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Cart from '../pages/Cart'
 import Home from '../pages/Home'
 import ProductDetails from '../pages/ProductDetails'
-import AllProductsPage from '../pages/AllProduct'
+import AllProductsPage from '../pages/Allproduct'
 
 const Navigations = () => {
   return (
