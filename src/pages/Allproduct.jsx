@@ -12,7 +12,7 @@ const ProductCard = ({ item }) => {
 
     const handleAddToCart = (product) => {
         dispatch(addToCart(product));
-        toast.success(`${product.title} added to cart!`);
+        // toast.success(`${product.title} added to cart!`);
     };
 
     return (
