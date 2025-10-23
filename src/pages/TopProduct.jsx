@@ -17,7 +17,7 @@ const TopProducts = () => {
 
   if (!data || data.length === 0) {
     return (
-      <div className="text-center text-white p-4 bg-dark">
+      <div className="text-center text-white p-3 bg-dark">
         Loading Top Products...
       </div>
     );
@@ -52,19 +52,23 @@ const TopProducts = () => {
       <h3 className="text-center text-white p-4">Top Products</h3>
 
       {/* Category Buttons */}
-      <div className="button-container text-center mb-4">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`btn text-white mx-2 ${
-              activeCategory === category ? "active button_fist_prod" : ""
-            }`}
-            onClick={() => setActiveCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+   <div className="flex justify-center gap-6 flex-wrap my-6">
+  {categories.map((category) => (
+    <button
+      key={category}
+      onClick={() => setActiveCategory(category)}
+      className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 
+        ${activeCategory === category
+          ? "bg-red-600 text-white shadow-lg scale-105"
+          : " text-gray-300 hover:bg-red-500 hover:text-white hover:scale-105"
+        }`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
+
 
       {/* Product Cards */}
       <div className="container">
