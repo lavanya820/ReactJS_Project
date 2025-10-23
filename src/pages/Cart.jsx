@@ -3,6 +3,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaTrashAlt } from "react-icons/fa";
 import { increaseQty, decreaseQty, removeFromCart } from "../rtk_store/productSlice";
 import { BsCartX } from "react-icons/bs";
 import "./Cart.css";
@@ -139,11 +140,12 @@ const Cart = () => {
                     </span>
                     {/* Remove Item */}
                     <div className="my-2 my-sm-0 pe-md-5">
-                      <i
-                        className="fa-regular fa-trash-can fa-xl me-3"
-                        style={{ color: "#ffffff", cursor: "pointer" }}
-                        onClick={() => dispatch(removeFromCart(item))}
-                      ></i>
+                      <div className="trash-icon" onClick={() => dispatch(removeFromCart(item))}>
+                        <FaTrashAlt size={24} />
+                        <span className="tooltip-text">Remove item</span>
+                      </div>
+
+
                     </div>
                   </div>
                   <br />

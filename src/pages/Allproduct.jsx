@@ -14,8 +14,9 @@ const ProductCard = ({ item }) => {
         dispatch(addToCart(product));
         // toast.success(`${product.title} added to cart!`);
     };
-
+    const [price, setPrice] = useState(5000);
     return (
+
         <div className="bg-black text-white rounded-lg shadow-md overflow-hidden border border-gray-700">
             <Link to={`/product/${item.id}`}>
                 <img
@@ -66,17 +67,17 @@ const Sidebar = ({ setSort, filters, setFilters, priceRange, setPriceRange }) =>
     };
 
     return (
-        <div className="bg-black text-white border-r border-gray-700 w-64 p-2 space-y-6">
-            <div className="overflow-y-scroll y_scrolling bgg">
+        <div className="bg-black text-white border-r border-gray-700 w-80 p-3 space-y-6">
+            <div className="overflow-y-scroll y_scrolling bgg px-3">
                 {/* Sort */}
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Sort By</h3>
                     <ul className="space-y-1 text-gray-300 cursor-pointer">
-                        <li onClick={() => setSort("latest")}>Latest</li>
-                        <li onClick={() => setSort("featured")}>Featured</li>
-                        <li onClick={() => setSort("topRated")}>Top Rated</li>
-                        <li onClick={() => setSort("lowToHigh")}>Price (Lowest First)</li>
-                        <li onClick={() => setSort("highToLow")}>Price (Highest First)</li>
+                        <li onClick={() => setSort("latest")}className="hover:text-red-500 transition-colors duration-200">Latest</li>
+                        <li onClick={() => setSort("featured")} className="hover:text-red-500 transition-colors duration-200">Featured</li>
+                        <li onClick={() => setSort("topRated")} className="hover:text-red-500 transition-colors duration-200">Top Rated</li>
+                        <li onClick={() => setSort("lowToHigh")} className="hover:text-red-500 transition-colors duration-200">Price (Lowest First)</li>
+                        <li onClick={() => setSort("highToLow")} className="hover:text-red-500 transition-colors duration-200">Price (Highest First)</li>
                     </ul>
                 </div>
 
@@ -119,7 +120,7 @@ const Sidebar = ({ setSort, filters, setFilters, priceRange, setPriceRange }) =>
 
                     {/* ✅ Price Filter */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-2">Price Range</h4>
+                        <h4 className="text-lg font-semibold mb-2">Price</h4>
                         <p className="text-gray-300">Up to ₹{priceRange}</p>
                         <input
                             type="range"
@@ -128,9 +129,9 @@ const Sidebar = ({ setSort, filters, setFilters, priceRange, setPriceRange }) =>
                             step="500"
                             value={priceRange}
                             onChange={(e) => setPriceRange(Number(e.target.value))}
-                            className="w-40"
+                            className="w-40 price-slider"
                         />
-                        
+
                     </div>
                 </div>
             </div>

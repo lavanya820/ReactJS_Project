@@ -44,3 +44,4 @@ const cartMiddleware=(store)=>(next)=>(action)=>{
 export const {addToCart,removeFromCart,increaseQty,decreaseQty}=productSlice.actions;
 export const cartReducer=productSlice.reducer;
 export const cartMiddlewareFn=cartMiddleware;
+// project done

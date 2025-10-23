@@ -70,3 +70,4 @@ export default function Carousel() {
         </div>
     );
 }
+// project done

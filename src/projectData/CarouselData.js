@@ -66,3 +66,4 @@ export const SliderData = [
           path: "/product-details/",
       }
 ];
+// project done

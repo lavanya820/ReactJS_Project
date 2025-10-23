@@ -72,7 +72,7 @@ export default function Footer() {
       {/* ✅ Bottom Bar */}
       <div className="d-flex justify-content-between align-items-center">
         <p className="d-flex align-items-center gap-1 m-0">
-          2025 | All Rights Reserved <FaRegCopyright className="ms-1" />
+          2025 | All Rights Reserved <FaRegCopyright className="ms-1" />.
         </p>
         <div className="d-flex gap-10 text-white fs-5 mr-15">
           <FaFacebookF className="hover:text-red-500 transition-all cursor-pointer" />
@@ -84,4 +84,5 @@ export default function Footer() {
     </footer>
   );
 }
+// project done
 

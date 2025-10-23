@@ -45,6 +45,7 @@ const ProductDetails = () => {
             avatar: "https://ui-avatars.com/api/?name=Atharva+Kumar&background=F31260&color=fff"
         }
     ];
+// project done
 
 
     // toggle function
