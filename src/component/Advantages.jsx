@@ -5,7 +5,7 @@ import {FaShieldAlt,FaTags,FaCreditCard } from "react-icons/fa";
 export default function Advantages() {
     return (
         <div className='bg-neutral-800 text-white'>
-            <h1 className='text-center pt-5 text-2xl'>Our Advantages</h1>
+            <h3 className='text-center pt-5 text-2xl'>Our Advantages</h3>
             <div className='flex justify-evenly mt-20 pb-20'>
                 <div className='flex'>
                     <p className='text-red-500 text-3xl mt-2 mr-4'><FaTruckFast/></p>
