@@ -1,49 +1,42 @@
-import React from "react";
-import "./Advantages.css";
-// import "./Advantages.css";
+import React from 'react'
+import { FaTruckFast } from "react-icons/fa6";
+import {FaShieldAlt,FaTags,FaCreditCard } from "react-icons/fa";
 
-const Advantages = () => {
-  return (
-    <div className="container p-4">
-      <h3 style={{ textAlign: "center", color: "white" }} className="p-4">
-        Our Advantages
-      </h3>
-
-      <div className="d-flex gap-2 flex-nowrap">
-        <div className="feature-card bg-dark">
-          <i className="fa-solid fa-truck-fast icon-box"></i>
-          <div className="text-box">
-            <p className="feature-title">Express Delivery</p>
-            <p className="feature-text">Ship in 24 Hours</p>
-          </div>
+export default function Advantages() {
+    return (
+        <div className='bg-neutral-800 text-white'>
+            <h1 className='text-center pt-5 text-2xl'>Our Advantages</h1>
+            <div className='flex justify-evenly mt-20 pb-20'>
+                <div className='flex'>
+                    <p className='text-red-500 text-3xl mt-2 mr-4'><FaTruckFast/></p>
+                    <div>
+                        <h4>Express Delivery</h4>
+                        <p className='text-sm text-gray-400 '>Ships in 24 Hours</p>
+                    </div>
+                </div>
+                <div className='flex'>
+                    <p className='text-red-500 text-3xl mt-2 mr-4'><FaShieldAlt/></p>
+                    <div>
+                        <h4>Brand Warranty</h4>
+                        <p className='text-sm text-gray-400'>100% Original Products</p>
+                    </div>
+                </div>
+                <div className='flex'>
+                    <p className='text-red-500 text-3xl mt-2 mr-4'><FaTags/></p>
+                    <div>
+                        <h4>Exciting Deals</h4>
+                        <p className='text-sm text-gray-400'>On all prepaid Orders</p>
+                    </div>
+                </div>
+                <div className='flex'>
+                    <p className='text-red-500 text-3xl mt-2 mr-4'><FaCreditCard/></p>
+                    <div>
+                        <h4>Secure Payments</h4>
+                        <p className='text-sm text-gray-400'>SSL/Secure certificate</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    )
+}
 
-        <div className="feature-card">
-          <i className="fa-solid fa-shield-halved icon-box"></i>
-          <div className="text-box">
-            <p className="feature-title">Brand Warranty</p>
-            <p className="feature-text">100% Original products</p>
-          </div>
-        </div>
-
-        <div className="feature-card">
-          <i className="fa-solid fa-tags icon-box"></i>
-          <div className="text-box">
-            <p className="feature-title">Exciting Deals</p>
-            <p className="feature-text">On All prepaid orders</p>
-          </div>
-        </div>
-
-        <div className="feature-card">
-          <i className="fa-solid fa-credit-card icon-box"></i>
-          <div className="text-box">
-            <p className="feature-title">Secure Payments</p>
-            <p className="feature-text">SSL/Secure certificate</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Advantages;
